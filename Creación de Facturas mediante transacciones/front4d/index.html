@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <label for='txtname'>
+                Nombre:<input type="text" id='txtname'>
+                <br>
+            </label>
+            <label for='txtquantity'>
+                Cantidad:<input type="number" id='txtquantity'>
+                <br>
+            </label>
+            <label for='txtcost'>
+                Costo:<input type="number" id='txtcost'>
+                <br>
+            </label>
+            <button type="button" id="btnadd">Agregar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </div>
+    <div>
+        <form>
+            <label for='txtRFC'>
+                RFC Cliente: <input type="text" id="txtRFC" placeholder="RFC000000HHH"> 
+                <br>
+            </label>
+            <h3>Lista de Productos</h3>
+            <button type="button" id="btnGetProducts">Refrescar</button>
+            <select id="mnuproducts">
+
+            </select>
+            <label for="txtinvquantity">
+                Cantidad:<input type="text" id="txtinvquantity" value="0">
+                <br>
+            </label>
+            <button type="button" id="btnAdd2Invoice">Incluir</button>
+            <br>
+            <br>
+            <button type="button" id="btnSaveInvoice">Guardar Factura</button>
+            <div id="detalleFactura"></div>
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
